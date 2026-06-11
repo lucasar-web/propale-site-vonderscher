@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenêtres et Portes | Menuiserie Vonderscher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2937',
+                        secondary: '#D97706',
+                        light: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased pt-20"> <!-- Added pt-20 for fixed header offset -->
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center relative">
+            <a href="index.html" class="flex items-center">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/logo_vonderscher.png" alt="Vonderscher" class="h-12">
+            </a>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="index.html" class="hover:text-secondary transition">Accueil</a>
+                <a href="menuiserie-fenetres.html" class="text-secondary transition">Fenêtres & Portes</a>
+                <a href="index.html#realisations" class="hover:text-secondary transition">Réalisations</a>
+                <a href="index.html#showroom" class="hover:text-secondary transition">Showroom</a>
+                <a href="#contact" class="hover:text-secondary transition">Contact</a>
+            </nav>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white w-full absolute top-full left-0 border-t border-gray-100 shadow-lg">
+            <nav class="flex flex-col text-center space-y-4 py-6 text-sm font-semibold uppercase tracking-wider">
+                <a href="index.html" class="hover:text-secondary transition mobile-link">Accueil</a>
+                <a href="menuiserie-fenetres.html" class="text-secondary transition mobile-link">Fenêtres & Portes</a>
+                <a href="index.html#realisations" class="hover:text-secondary transition mobile-link">Réalisations</a>
+                <a href="#contact" class="hover:text-secondary transition mobile-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-24 text-center">
+        <div class="container mx-auto px-4" data-aos="fade-up">
+            <h1 class="font-serif text-4xl md:text-6xl font-bold mb-4">Notre Expertise : Fenêtres & Portes</h1>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-6"></div>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+                L'art de la menuiserie extérieure adapté à tous vos besoins, du style traditionnel aux formes les plus atypiques.
+            </p>
+        </div>
+    </section>
+
+    <!-- Expertise Content -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/fenetre5003-1-260x185.jpg" alt="Savoir-faire Menuiserie" class="rounded-lg shadow-xl w-full object-cover h-80">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="font-serif text-3xl font-bold mb-6 text-primary">Un Savoir-Faire d'Exception</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Bien au-delà de l'agencement intérieur, la Menuiserie Vonderscher excelle dans la création sur mesure de menuiseries extérieures. Nos équipes maîtrisent les techniques traditionnelles et modernes pour réaliser des portes et fenêtres qui respectent le caractère de votre bâtiment tout en offrant les meilleures performances d'isolation.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Nous sommes particulièrement fiers d'avoir participé à la restauration et à l'équipement de lieux prestigieux et chargés d'histoire, tels que la <strong>Bibliothèque Humaniste de Sélestat</strong> ou encore l'<strong>INSP (anciennement ENA) à Strasbourg</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typology Grid -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-center text-primary" data-aos="fade-up">Des Formes Pour Tous Vos Projets</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-16" data-aos="fade-up" data-aos-delay="100"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+                <!-- Type 1 -->
+                <div class="p-8 border border-gray-100 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-border-all text-4xl text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-primary mb-2">Standard</h3>
+                    <p class="text-gray-500 text-sm">Des lignes droites et épurées pour une intégration parfaite dans les constructions modernes ou classiques.</p>
+                </div>
+                <!-- Type 2 -->
+                <div class="p-8 border border-gray-100 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-archway text-4xl text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-primary mb-2">Plein Cintre & Cintré</h3>
+                    <p class="text-gray-500 text-sm">Une courbure élégante en partie haute, idéale pour respecter le charme de l'ancien.</p>
+                </div>
+                <!-- Type 3 -->
+                <div class="p-8 border border-gray-100 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-circle-notch text-4xl text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-primary mb-2">Œil de Bœuf</h3>
+                    <p class="text-gray-500 text-sm">Fenêtres rondes ou ovales, parfaites pour apporter une touche d'originalité et de lumière sous les combles.</p>
+                </div>
+                <!-- Type 4 -->
+                <div class="p-8 border border-gray-100 rounded shadow hover:shadow-lg transition md:col-start-2 lg:col-start-2" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-bridge text-4xl text-secondary mb-4"></i>
+                    <h3 class="text-xl font-bold text-primary mb-2">Anse de Panier</h3>
+                    <p class="text-gray-500 text-sm">Un arc surbaissé très esthétique, souvent utilisé pour de grandes ouvertures ou portes cochères.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specific Gallery -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-center text-primary" data-aos="fade-up">Quelques Réalisations</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-16" data-aos="fade-up" data-aos-delay="100"></div>
+
+            <div id="realisations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Using original site images for windows -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/fenetre3002-1-260x185.jpg" alt="Fenêtres" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Fenêtres</h3>
+                        <p class="text-sm text-gray-300">Création et fabrication de différents types</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/fenetre5003-1-260x185.jpg" alt="Fenêtres" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Menuiserie extérieure</h3>
+                        <p class="text-sm text-gray-300">Sur mesure</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2022/10/escalierquart1-260x185.jpg" alt="Agencement" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Menuiserie</h3>
+                        <p class="text-sm text-gray-300">Boiseries et Agencement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-gray-300">
+        <!-- Call to Action -->
+        <div class="border-b border-gray-700 py-16">
+            <div class="container mx-auto px-4 text-center" data-aos="zoom-in" data-aos-duration="800">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Un Projet de Menuiserie ?</h2>
+                <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-400">
+                    Vous souhaitez des renseignements pour le remplacement de vos fenêtres, la création d'une porte d'entrée sur mesure… Contactez-nous !
+                </p>
+                <a href="mailto:contact@vonderscher.com" class="inline-block bg-secondary hover:bg-yellow-600 text-white font-semibold py-3 px-10 rounded-full transition duration-300 shadow-lg uppercase tracking-wider text-sm">Prendre Contact</a>
+            </div>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Logo & Social -->
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/logo_footer-1.png" alt="Vonderscher Logo" class="h-16 mb-6">
+                </div>
+
+                <!-- Atelier -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">L'Atelier</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt text-secondary w-5"></i> 13, Rue du Climont</li>
+                        <li>67220 Triembach-au-Val</li>
+                        <li><i class="fas fa-phone text-secondary w-5 mt-2"></i> 03 88 58 98 99</li>
+                    </ul>
+                </div>
+
+                <!-- Showroom -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">Le Showroom</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt text-secondary w-5"></i> 28, route de Colmar</li>
+                        <li>67600 SÉLESTAT</li>
+                        <li><i class="fas fa-phone text-secondary w-5 mt-2"></i> 03 88 85 81 14</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-[60] hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-8 text-white text-4xl hover:text-secondary focus:outline-none">&times;</button>
+        <img id="lightbox-img" src="" alt="Realisation" class="max-w-[90%] max-h-[90vh] object-contain shadow-2xl rounded">
+    </div>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        AOS.init({ once: true, offset: 50 });
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+        const links = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const portfolioItems = document.querySelectorAll('#realisations .group');
+
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.remove('hidden');
+                setTimeout(() => lightbox.classList.remove('opacity-0'), 10);
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightboxImg.src = '';
+            }, 300);
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if(e.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if(e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+        });
+    </script>
+</body>
+</html>
