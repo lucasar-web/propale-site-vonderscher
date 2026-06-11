@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuiserie Vonderscher | Agencement sur mesure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2937', /* Dark gray/black for elegant look */
+                        secondary: '#D97706', /* Amber for wood-like accent */
+                        light: '#F3F4F6'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+        .bg-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.vonderscher.com/wp-content/uploads/2020/12/slider_01-1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center relative">
+            <a href="#" class="flex items-center">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/logo_vonderscher.png" alt="Vonderscher" class="h-12">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none z-50 relative">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                <a href="#metiers" class="hover:text-secondary transition">Nos métiers</a>
+                <a href="#realisations" class="hover:text-secondary transition">Réalisations</a>
+                <a href="#showroom" class="hover:text-secondary transition">Le showroom</a>
+                <a href="#contact" class="hover:text-secondary transition">Contact</a>
+            </nav>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white w-full absolute top-full left-0 border-t border-gray-100 shadow-lg">
+            <nav class="flex flex-col text-center space-y-4 py-6 text-sm font-semibold uppercase tracking-wider">
+                <a href="#metiers" class="hover:text-secondary transition mobile-link">Nos métiers</a>
+                <a href="#realisations" class="hover:text-secondary transition mobile-link">Réalisations</a>
+                <a href="#showroom" class="hover:text-secondary transition mobile-link">Le showroom</a>
+                <a href="#contact" class="hover:text-secondary transition mobile-link">Contact</a>
+                <div class="flex justify-center space-x-4 pt-4 border-t border-gray-100">
+                    <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-secondary"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-hero h-screen flex items-center justify-center text-center text-white pt-20">
+        <div class="container mx-auto px-4">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 tracking-wide drop-shadow-lg">Agencement sur mesure</h1>
+            <p class="text-xl md:text-2xl font-light mb-10 max-w-2xl mx-auto">Depuis plus de 50 ans à votre service</p>
+            <a href="#contact" class="bg-secondary hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg uppercase tracking-wider text-sm">Votre projet</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-light">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-8 text-primary">La Menuiserie Vonderscher</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p class="text-lg leading-relaxed text-gray-600 mb-6">
+                Située à Triembach-au-Val (Villé) dans le département du Bas-Rhin, la menuiserie Vonderscher est spécialisée dans l’agencement sur mesure.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600">
+                De la conception à la pose en passant par la fabrication, nous intervenons sur toute la France pour réaliser les agencements de votre habitat ou magasins. Fort d’une équipe de 40 personnes, nous vous accueillons dans nos ateliers de fabrication afin d’étudier vos projets.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="metiers" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-center text-primary">Nos Métiers</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-16"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="text-center p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition duration-300 bg-white">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/ico_1.png" alt="Menuiserie" class="mx-auto h-16 mb-6">
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wide text-primary">Menuiserie</h3>
+                    <ul class="text-gray-500 space-y-2">
+                        <li>Escaliers</li>
+                        <li>Fenêtres</li>
+                        <li>Portes</li>
+                        <li>Terrasses</li>
+                    </ul>
+                </div>
+                <!-- Service 2 -->
+                <div class="text-center p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition duration-300 bg-white">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/ico_2.png" alt="Mobilier sur mesure" class="mx-auto h-16 mb-6">
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wide text-primary">Mobilier sur mesure</h3>
+                    <ul class="text-gray-500 space-y-2">
+                        <li>Cuisines</li>
+                        <li>Salles de bains</li>
+                        <li>Dressings</li>
+                        <li>Placards & Rangements</li>
+                    </ul>
+                </div>
+                <!-- Service 3 -->
+                <div class="text-center p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition duration-300 bg-white">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/ico_3.png" alt="Agencement" class="mx-auto h-16 mb-6">
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wide text-primary">Agencement</h3>
+                    <ul class="text-gray-500 space-y-2">
+                        <li>Restaurants</li>
+                        <li>Boutiques</li>
+                        <li>Hôtels</li>
+                        <li>Collectivités</li>
+                    </ul>
+                </div>
+                <!-- Service 4 -->
+                <div class="text-center p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-xl transition duration-300 bg-white">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/ico_4.png" alt="Bureau d'études" class="mx-auto h-16 mb-6">
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-wide text-primary">Bureau d’études</h3>
+                    <ul class="text-gray-500 space-y-2">
+                        <li>Conception</li>
+                        <li>Plans</li>
+                        <li>Rendus 3D</li>
+                        <li>Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom & Newsletter Split -->
+    <section id="showroom" class="bg-primary text-white">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 min-h-[400px]" style="background-image: url('https://www.vonderscher.com/wp-content/uploads/2022/07/showroom_new.jpg'); background-size: cover; background-position: center;">
+            </div>
+            <div class="md:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+                <h2 class="font-serif text-3xl mb-6 font-bold">Inscrivez-vous à notre newsletter</h2>
+                <p class="text-gray-300 mb-8">Restez informé de nos dernières réalisations et actualités.</p>
+                <form class="space-y-4">
+                    <div class="flex space-x-4">
+                        <input type="text" placeholder="Nom" class="w-1/2 px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-secondary">
+                        <input type="text" placeholder="Prénom" class="w-1/2 px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-secondary">
+                    </div>
+                    <input type="email" placeholder="Adresse mail *" required class="w-full px-4 py-3 bg-gray-800 text-white border border-gray-700 rounded focus:outline-none focus:border-secondary">
+                    <button type="submit" class="bg-secondary hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded transition duration-300 w-full uppercase tracking-wider text-sm mt-4">Vous inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Realisations (Portfolio) -->
+    <section id="realisations" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 text-center text-primary">Nos Réalisations</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto mb-16"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/kientzheim_001-1-260x185.jpg" alt="Hotel L'ABBAYE D'ALSPACH" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Hôtel L’Abbaye d’Alspach</h3>
+                        <p class="text-sm text-gray-300">Création, fabrication et pose du mobilier des chambres...</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2024/07/hoffner02-260x185.jpg" alt="Maison Wantzenau" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Maison (Wantzenau)</h3>
+                        <p class="text-sm text-gray-300">Aménagement d'une villa</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2023/04/fuchs06-260x185.jpg" alt="Cuisine" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Cuisine</h3>
+                        <p class="text-sm text-gray-300">Réalisation d’une cuisine et d’un meuble TV</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2022/10/escalierquart1-260x185.jpg" alt="Escalier" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Escalier Quart Tournant</h3>
+                        <p class="text-sm text-gray-300">Menuiserie</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/poissonerie_003-1-260x185.jpg" alt="Poissonnerie" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Poissonnerie</h3>
+                        <p class="text-sm text-gray-300">Rénovation d'un Traiteur</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2018/03/fenetre5003-1-260x185.jpg" alt="Fenêtres" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-6 text-white">
+                        <h3 class="font-serif text-xl font-bold mb-2">Fenêtres</h3>
+                        <p class="text-sm text-gray-300">Création et fabrication</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-3 px-8 rounded transition duration-300 uppercase tracking-wider text-sm">Voir toutes les réalisations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- References / Logos -->
+    <section class="py-12 border-t border-gray-200 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-widest mb-8">Ils nous font confiance</h3>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition duration-300">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2020/12/ibis-1.jpg" alt="Ibis" class="h-12">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2020/12/flams-1.jpg" alt="Flams" class="h-12">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2021/02/avaniparis.jpg" alt="Avani" class="h-12">
+                <img src="https://www.vonderscher.com/wp-content/uploads/2020/12/roelly-1.jpg" alt="Roelly" class="h-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-gray-300">
+        <!-- Call to Action -->
+        <div class="border-b border-gray-700 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-6">Un Projet ?</h2>
+                <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-400">
+                    Vous souhaitez des renseignements, nous faire part de vos projets… Pour cela nous vous invitons à nous contacter. Notre responsable projet prendra contact avec vous très rapidement.
+                </p>
+                <a href="mailto:contact@vonderscher.com" class="inline-block bg-secondary hover:bg-yellow-600 text-white font-semibold py-3 px-10 rounded-full transition duration-300 shadow-lg uppercase tracking-wider text-sm">Prendre Contact</a>
+            </div>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Logo & Social -->
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2020/11/logo_footer-1.png" alt="Vonderscher Logo" class="h-16 mb-6">
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary transition text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary transition text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Atelier -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">L'Atelier</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt text-secondary w-5"></i> 13, Rue du Climont</li>
+                        <li>67220 Triembach-au-Val</li>
+                        <li><i class="fas fa-phone text-secondary w-5 mt-2"></i> 03 88 58 98 99</li>
+                    </ul>
+                </div>
+
+                <!-- Showroom -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-4 border-b border-gray-700 pb-2 inline-block">Le Showroom</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-map-marker-alt text-secondary w-5"></i> 28, route de Colmar</li>
+                        <li>67600 SÉLESTAT</li>
+                        <li><i class="fas fa-phone text-secondary w-5 mt-2"></i> 03 88 85 81 14</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="bg-gray-900 py-4">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2024 Vonderscher. Tous droits réservés.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0 items-center">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2022/01/marquealsace.png" alt="Marque Alsace" class="h-8">
+                    <img src="https://www.vonderscher.com/wp-content/uploads/2022/01/rge.png" alt="RGE" class="h-8">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="fixed bottom-8 right-8 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-600 transition duration-300 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('i');
+        const links = document.querySelectorAll('.mobile-link');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close menu when clicking a link
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
